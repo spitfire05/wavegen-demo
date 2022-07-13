@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans;
+        @apply text-sm font-normal antialiased
+    }
+    div, button, select, input {
+        @apply mb-1 ml-1 p-1;
+    }
+    button {
+        @apply bg-gray-100 border-solid border-gray-300 border
+    }
+}
