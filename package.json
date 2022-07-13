@@ -14,6 +14,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.68",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
@@ -35,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/chart.js": "^2.9.37",
 		"chart.js": "^3.8.0"
 	}
 }
