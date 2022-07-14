@@ -13,6 +13,9 @@
     main {
         @apply m-4
     }
+    table {
+        @apply ml-4
+    }
     div, button, select, input, label {
         @apply mb-1 ml-1 p-1;
     }
