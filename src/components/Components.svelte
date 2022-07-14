@@ -50,24 +50,23 @@ import type { cfg, func } from "src/types";
 </table>
 
 <div>
-    <select id="type" bind:this={type}>
-        <option value="sine">Sine</option>
-        <option value="sawtooth">Sawtooth</option>
-    </select>
+    <label class="inline-block">
+        <span>Function:</span>
+        <select id="type" bind:this={type}>
+            <option value="sine">Sine</option>
+            <option value="sawtooth">Sawtooth</option>
+        </select>
+    </label>
 
-    <label>Frequency:
+    <label class="inline-block">
+        <span>Frequency:</span>
         <input type="number" min=0 bind:value={frequency} class:invalid={frequency <= 0}/>
     </label>
 
-    <label>Amplitude:
+    <label class="inline-block">
+        <span>Amplitude:</span>
         <input type="number" min=0 bind:value={amplitude} class:invalid={amplitude <= 0}/>
     </label>
 
     <button class="bg-blue-500 text-white" disabled={!valid} on:click={onAdd}>Add waveform component</button>
 </div>
-
-<style>
-    label {
-        display: inline;
-    }
-</style>

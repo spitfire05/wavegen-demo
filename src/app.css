@@ -23,7 +23,7 @@
         @apply bg-gray-100 border-solid font-bold pl-4 pr-4 pt-2 pb-2 text-black
     }
     input, select {
-        @apply border border-black focus:outline-blue-400 rounded
+        @apply border border-black focus:outline-blue-400 rounded w-36
     }
 }
 
