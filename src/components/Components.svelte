@@ -56,11 +56,11 @@ import type { cfg, func } from "src/types";
     </select>
 
     <label>Frequency:
-        <input type="number" min=0 bind:value={frequency} class:bg-red-500={frequency <= 0}/>
+        <input type="number" min=0 bind:value={frequency} class:invalid={frequency <= 0}/>
     </label>
 
     <label>Amplitude:
-        <input type="number" min=0 bind:value={amplitude} class:bg-red-500={amplitude <= 0}/>
+        <input type="number" min=0 bind:value={amplitude} class:invalid={amplitude <= 0}/>
     </label>
 
     <button class="bg-blue-500 text-white" disabled={!valid} on:click={onAdd}>Add waveform component</button>

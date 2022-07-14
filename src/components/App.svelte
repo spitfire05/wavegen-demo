@@ -8,7 +8,7 @@ import type { cfg } from "src/types";
 
 	let settings: cfg = {
 		sample_rate: 44100,
-		n: 100,
+		n: 1000,
 		components: []
 	}
 </script>
