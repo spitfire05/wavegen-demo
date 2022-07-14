@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Chart from 'chart.js/auto/auto.js';
     import type { cfg } from 'src/types';
-    import init, { Waveformf32 } from 'rust'
+    import init, { Waveformf32 } from 'wavegen-wasm'
 
 
 	export let settings: cfg;

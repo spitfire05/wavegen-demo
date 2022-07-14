@@ -2,8 +2,8 @@
 	"name": "svelte-app",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "wasm-pack build ./rust --target web && vite build",
+		"dev": "wasm-pack build ./wavegen-wasm --target web && vite dev",
+		"build": "wasm-pack build ./wavegen-wasm --target web && vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync",
@@ -16,6 +16,7 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.68",
 		"@sveltejs/kit": "next",
+		"@types/chart.js": "^2.9.37",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"autoprefixer": "^10.4.7",
@@ -36,7 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@types/chart.js": "^2.9.37",
 		"chart.js": "^3.8.0"
 	}
 }

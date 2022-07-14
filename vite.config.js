@@ -22,7 +22,7 @@ const config = {
 	],
 	plugins: [
 		sveltekit(),
-		wasmPack('./rust'),
+		wasmPack('./wavegen-wasm'),
 	]
 };
 
