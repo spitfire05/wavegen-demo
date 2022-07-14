@@ -13,14 +13,11 @@
     div, button, select, input, label {
         @apply mb-1 ml-1 p-1;
     }
-    /* td, table {
-        @apply align-middle inline
-    } */
     button {
-        @apply bg-gray-100 border-solid border-gray-300 border
+        @apply bg-gray-100 border-solid font-bold pl-4 pr-4 pt-2 pb-2 text-black
     }
     input, select {
-        @apply border
+        @apply border border-black focus:outline-blue-400 rounded
     }
 }
 

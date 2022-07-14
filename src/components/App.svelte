@@ -13,12 +13,13 @@ import type { cfg } from "src/types";
 	}
 </script>
 
-<div class="bg-white border mb-2">
+<div class="bg-white border mb-2 shadow">
 	<Controls bind:settings={settings}/>
-
+</div>
+<div class="bg-white border mb-2 shadow">
 	<Components bind:settings={settings}/>
 </div>
 
-<div class="bg-white border">
+<div class="bg-white border shadow">
 	<Chart settings={settings}/>
 </div>

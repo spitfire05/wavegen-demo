@@ -63,7 +63,7 @@ import type { cfg, func } from "src/types";
         <input type="number" min=0 bind:value={amplitude} class:bg-red-500={amplitude <= 0}/>
     </label>
 
-    <button disabled={!valid} on:click={onAdd}>Add waveform component</button>
+    <button class="bg-blue-500 text-white" disabled={!valid} on:click={onAdd}>Add waveform component</button>
 </div>
 
 <style>

@@ -29,7 +29,7 @@
     </td>
 
     <td>
-        <button class="bg-gray-50" on:click={onClick}>Remove</button>
+        <button class="bg-red-500 text-white" on:click={onClick}>Remove</button>
     </td>
 </tr>
 
